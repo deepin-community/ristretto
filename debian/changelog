@@ -1,5 +1,440 @@
-template-repository (1.0-1) unstable; urgency=medium
+ristretto (0.13.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 0.13.1.
+  * d/control:
+    - Replace intltool with gettext.
+    - Also suggest libjxl-gdk-pixbuf.
+  * Update Standards-Version to 4.6.2.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Unit 193 <unit193@debian.org>  Thu, 15 Jun 2023 04:35:31 -0400
+
+ristretto (0.12.4-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Akbarkhon Variskhanov ]
+  * Suggest some extra gdk-pixbuf libraries.
+    Thanks to xiao sheng wen (Closes: #1016518, #1016521)
+  * Install NEWS with override_dh_installchangelogs
+  * Update upstream metadata
+
+  [ Unit 193 ]
+  * New upstream version 0.12.4.
+  * d/rules: Opt-out of trimmed changelogs.
+
+ -- Unit 193 <unit193@debian.org>  Sat, 17 Dec 2022 03:42:25 -0500
+
+ristretto (0.12.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.12.3.
+  * Update Standards-Version to 4.6.1.
+
+ -- Unit 193 <unit193@debian.org>  Tue, 12 Jul 2022 22:59:50 -0400
+
+ristretto (0.12.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.12.2.
+  * d/rules: Drop '--as-needed' from LDFLAGS, default in stable now.
+
+ -- Unit 193 <unit193@debian.org>  Tue, 15 Feb 2022 14:41:10 -0500
+
+ristretto (0.12.1-1) unstable; urgency=medium
+
+  * New upstream version 0.12.1
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 29 Nov 2021 07:54:35 +0100
+
+ristretto (0.11.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set upstream metadata fields: Repository.
+  * Update standards version to 4.4.1, no changes needed.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Unit 193 ]
+  * New upstream version 0.11.0.
+  * d/docs: Follow upstream rename, README → README.md.
+  * d/control:
+    - Bump DH compat to 13.
+    - R³: no.
+  * d/watch:
+    - Update for upstream's move to mirrorbit.
+    - Use uscan special strings.
+  * Update Standards-Version to 4.6.0.
+
+ -- Unit 193 <unit193@debian.org>  Wed, 18 Aug 2021 23:21:58 -0400
+
+ristretto (0.10.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.10.0
+  * d/compat, d/control: Drop d/compat in favor of debhelper-compat.
+  * d/control:
+    - Drop Lionel from Uploaders, thanks!
+    - Drop version constraint from Build-Depends.
+    - Drop libexo-1-dev and add libxfce4util-dev to Build-Depends.
+    - Update Build-Depends for GTK3 migration:
+      + libgtk2.0-dev → libgtk-3-dev
+      + libxfce4ui-1-dev → libxfce4ui-2-dev
+  * Update Standards-Version to 4.4.0.
+
+ -- Unit 193 <unit193@ubuntu.com>  Fri, 23 Aug 2019 02:14:18 -0400
+
+ristretto (0.8.4-1) unstable; urgency=medium
+
+  * New upstream version 0.8.4
+  * d/control: update standards version to 4.3.0
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 10 Jul 2019 09:26:24 +0200
+
+ristretto (0.8.3-1) unstable; urgency=medium
+
+  [ Yves-Alexis Perez ]
+  * Moved the package to git on salsa.debian.org
+  * Updated the maintainer address to debian-xfce@lists.debian.org
+                                                                closes: #899683
+  * d/gbp.conf added, following DEP-14
+  * New upstream version 0.8.3
+
+  [ Unit 193 ]
+  * d/compat, d/control: Bump dh compat to 11.
+  * d/control:
+    - Build-depend on xfce4-dev-tools for autoreconf.
+    - Drop build-depend on libdbus-glib-1-dev.
+    - Update homepage field as found in source.
+  * d/copyright: Re-write to DEP-5 format.
+  * d/rules: Drop obsolete --parallel.
+  * d/watch: Use https.
+  * Update Standards-Version to 4.1.5.
+  * Remove trailing whitespace from a previous entry.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 21 Aug 2018 17:21:24 +0200
+
+ristretto (0.8.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+  * debian/control:
+    - add build-dep on libmagic-dev.
+  * debian/control, debian/copyright, debian/doc: run wrap-and-sort.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 10 Feb 2017 14:36:45 +0100
+
+ristretto (0.8.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+  * debian/control:
+    - update standards version to 3.9.8.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 07 Oct 2016 08:11:59 +0200
+
+ristretto (0.8.0-1) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Correct Vcs-* URLs to point to anonscm.debian.org
+
+  [ Mateusz Łukasik ]
+  * New upstream release.
+  * Bump standards version to 3.9.6
+  * Update debian/watch.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 06 May 2015 21:11:09 +0200
+
+ristretto (0.6.3-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * debian/rules:
+    - enable all hardening flags.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 22 May 2013 07:32:36 +0200
+
+ristretto (0.6.3-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 07 Oct 2012 11:04:41 +0200
+
+ristretto (0.6.0-1) experimental; urgency=low
+
+  [ Yves-Alexis Perez ]
+  * debian/watch updated to track the 0.6 branch.
+
+  [ Lionel Le Folgoc ]
+  * New upstream release, targeted at Xfce 4.10.
+  * debian/control: bumped required versions for Xfce 4.10.
+  * debian/rules: pass --parallel to dh.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 05 May 2012 14:54:49 +0200
+
+ristretto (0.3.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch updated to track the 0.3 branch.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 27 Apr 2012 23:23:11 +0200
+
+ristretto (0.3.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 01 Apr 2012 14:03:52 +0200
+
+ristretto (0.3.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - update standards version to 3.9.3.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 03 Mar 2012 12:33:41 +0100
+
+ristretto (0.3.4-1) unstable; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream bugfix release.
+    - Round rendering of image to whole pixels, should fix blurry images in
+      1:1 and fullscreen modes.                                 Closes: #661199
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - bump debhelper build-dep to 9.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sat, 25 Feb 2012 14:17:32 +0100
+
+ristretto (0.3.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 14 Jan 2012 21:07:56 +0100
+
+ristretto (0.3.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - "Set as wallpaper" function now works from GNOME.             lp: #360518
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 10 Jan 2012 21:43:04 +0100
+
+ristretto (0.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - add build-dep on exo.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 05 Nov 2011 22:47:59 +0100
+
+ristretto (0.2.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 29 Oct 2011 09:35:41 +0200
+
+ristretto (0.2.1-1) unstable; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 23 Oct 2011 21:17:02 +0200
+
+ristretto (0.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Fri, 07 Oct 2011 22:19:37 +0200
+
+ristretto (0.1.0-1) unstable; urgency=low
+
+  * New upstream releaase.
+  * debian/patches:
+    - 01_fix-various-memleaks dropped, included upstream.
+  * debian/compat bumped to 9 for hardening support.
+  * debian/control:
+    - drop build-dep on hardening-includes and update debhelper build-dep for
+      compat 9 mode.
+  * debian/rules:
+    - set hardening and ldflags the v9 way.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 06 Oct 2011 22:46:46 +0200
+
+ristretto (0.0.93-3) unstable; urgency=low
+
+  * debian/patches:
+    - 01_fix-various-memleaks.patch: apply patch from upstream author to fix
+      several memleaks when opening a set of pictures.
+    - series: add this patch.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 04 Sep 2011 22:28:36 +0200
+
+ristretto (0.0.93-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 29 Apr 2011 08:06:45 +0200
+
+ristretto (0.0.93-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    - 01_fix-implicit-dso-linking dropped, included upstream.
+  * debian/control:
+    - update build-deps for Xfce 4.8.
+    - remove Emanuele, Simon and Stefan from uploaders, thanks to them.
+    - update standards version to 3.9.2.
+  * debian/copyright updated.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 20 Apr 2011 12:53:56 +0200
+
+ristretto (0.0.91-2) experimental; urgency=low
+
+  * debian/patches:
+    - 01_fix-implicit-dso-linking.patch: fix build with --no-add-needed
+      (backported from upstream git).
+    - series: add this patch.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Sun, 27 Feb 2011 01:15:24 +0100
+
+ristretto (0.0.91-1) experimental; urgency=low
+
+  [ Lionel Le Folgoc ]
+  * New upstream development release.
+  * Convert to 3.0 (quilt).
+  * Switch to dh.
+  * debian/control:
+    - add myself to Uploaders
+    - refresh build-deps: drop libthunar-vfs-1-dev; add libxfconf-0-dev,
+      libglib2.0-dev (>= 2.16.0) and libcairo2-dev (>= 1.8.0)
+    - bump Standards-Version to 3.9.0
+    - recommends tumbler (used to generate thumbnails).
+  * debian/manpages: add debian/ristretto.1.
+  * debian/patches/01_fix-segfault-with-gif-images.patch: dropped, not needed.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 3.9.1.
+    - add build-dep on hardening-includes.
+  * debian/rules:
+    - pick {C,LD}FLAGS from dpkg-buildflags.
+    - add -O1, -z,defs and --as-needed to LDFLAGGS.
+    - add hardening flags to {C,LD}FLAGS.
+  * debian/docs: install AUTHORS, NEWS and README upstream files.
+
+ -- Lionel Le Folgoc <mrpouit@gmail.com>  Mon, 21 Feb 2011 08:51:11 +0100
+
+ristretto (0.0.22-2) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Fix Vcs-* fields, they were missing 'trunk' in the path.
+
+  [ Yves-Alexis Perez ]
+  * debian/watch updated to track Xfce archive reorganisation.
+  * debian/control:
+    - Bump standards version to 3.8.4
+
+  [ Stefan Ott ]
+  * debian/rules:
+    - Don't call dh_desktop (deprecated)
+
+  [ Lionel Le Folgoc ]
+  * debian/patches/01_fix-segfault-with-gif-images.patch: copy pixbuf before
+    using them, should fix unref & segfault issues with GIF files.
+  * debian/rules: include simple-patchsys.mk.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Feb 2010 21:41:35 +0100
+
+ristretto (0.0.22-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/rules:
+    - correct LDFLAGS line to -Wl,-z,-defs -Wl,--as-needed.
+  * debian/control:
+    - move to xfce section.
+    - add build-dep on intltool.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 16 May 2009 00:26:22 +0200
+
+ristretto (0.0.21-1) unstable; urgency=low
+
+  [ Stefan Ott ]
+  * New upstream release.
+  * Removed patches/01_plug-memleak.patch (fixed upstream)
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - add build-dep on libxfcegui4-dev.
+    - update standards version to 3.8.1.
+    - bump debhelper build-dep to 7.
+    - add ${misc:Depends} to depends.
+  * debian/compat bumped to 7.
+  * debian/rules:
+    - add -Wl,--as-needed to LDFLAGS.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 04 Apr 2009 02:28:38 +0200
+
+ristretto (0.0.20-3) unstable; urgency=low
+
+  [ Stefan Ott ]
+  * debian/control: update e-mail address
+
+  [ Yves-Alexis Perez ]
+  * debian/patches:
+    - 01_plug-memleak added, fixes a huge memleak when using autoreload.
+      (r4842, Xfce4 #4508)
+  * debian/rules:
+    - add simple-patchsys rule.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 04 Nov 2008 08:16:23 +0100
+
+ristretto (0.0.20-2) unstable; urgency=low
+
+  * debian/rules: call dh_desktop so mime desktop database gets updated.
+  * debian/control:
+    - update standards version to 3.8.0.
+    - remove Rudy Godoy and Martin Loschwitz from Uploaders.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 03 Jul 2008 08:22:12 +0200
+
+ristretto (0.0.20-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 25 May 2008 11:28:29 +0200
+
+ristretto (0.0.18-1) unstable; urgency=low
+
+  * new upstream release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 25 Mar 2008 10:56:33 +0100
+
+ristretto (0.0.17-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches: 01-fix-segfault-on-scroll-empty-window dropped, merged
+    upstream.
+  * debian/rules: simple-patchsys rule dropped, useless now.
+  * debian/control: update my email address.
+  * debian/ristretto.1: give a useful description in manpage.
+  * debian/copyright: add copyright sign and dates.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 17 Feb 2008 14:16:10 +0100
+
+ristretto (0.0.16-1) unstable; urgency=low
+
+  [ Stefan Ott ]
+  * New upstream version
+  * Fixed url in debian/watch
+  * Added man page
+  * Updated standards versions to 3.7.3
+
+  [ Simon Huggins ]
+  * Add patch to stop segfault on scrolling an empty window.
+
+ -- Stefan Ott <stefan@desire.ch>  Tue, 05 Feb 2008 22:18:20 +0100
+
+ristretto (0.0.15-1) unstable; urgency=low
+
+  * Initial debian package					closes: #456622
+
+ -- Stefan Ott <stefan@desire.ch>  Mon, 17 Dec 2007 01:08:05 +0100
